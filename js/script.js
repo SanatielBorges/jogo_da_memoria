@@ -73,15 +73,15 @@ function showDifficultyModal() {
   hardBtn = document.getElementById("hard");
 
   easyBtn.onclick = function () {
-    setDifficulty(120);
-  };
-
-  mediumBtn.onclick = function () {
     setDifficulty(90);
   };
 
+  mediumBtn.onclick = function () {
+    setDifficulty(70);
+  };
+
   hardBtn.onclick = function () {
-    setDifficulty(60);
+    setDifficulty(45);
   };
 }
 
