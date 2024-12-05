@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="videos/Dragon Ball Z.mp4" type="video/mp4" />
+      Seu navegador não suporta a tag de vídeo.
+    </video>
+    <div class="overlay"></div>
+    <h1 id="title">Jogo da Memória</h1>
+    <h2 id="theme">Dragon Ball</h2>
+
+    <!-- Área do tabuleiro de jogo -->
+    <div id="game-board"></div>
+
+    <!-- Botão para iniciar o jogo -->
+    <button id="start-button">Iniciar Jogo</button>
+    <button id="records-button" class="action-btn">Ver Recordes</button>
+
+    <!-- Mensagem de status do jogo -->
+    <div id="message" style="display: none"></div>
+
+    <!-- Modal para escolher preferências -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <span class="modal-title">Escolha suas preferências</span>
+        <label for="player-name">Nome:</label>
+        <input type="text" id="player-name" name="player-name" required />
+        <span class="difficulty-title">Selecione a dificuldade</span>
+        <button id="easy" class="difficulty-btn">Fácil</button>
+        <button id="medium" class="difficulty-btn">Média</button>
+        <button id="hard" class="difficulty-btn">Difícil</button>
+      </div>
+    </div>
+
+    <!-- Barra de progresso (inicialmente oculta) -->
+    <div id="progress-container" style="display: none">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- Botões de ação (inicialmente ocultos) -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
