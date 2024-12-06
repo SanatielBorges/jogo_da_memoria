@@ -40,9 +40,8 @@ h2 {
 #game-board {
   display: grid;
   grid-template-columns: repeat(5, 120px);
-  gap: 10px;
-  margin: 20px;
-  margin-top: 20px; /* Adiciona espaço acima da primeira linha do tabuleiro */
+  gap: 4px;
+  margin: 4px;
   z-index: 2; /* Coloca o tabuleiro acima do overlay */
   position: relative; /* Necessário para o overlay de fumê */
 }
